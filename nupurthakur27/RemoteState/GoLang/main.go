@@ -46,4 +46,19 @@ func main() {
 		ispn: 1235,
 	}
 	book.Demo_Method()
+	//Interface
+	var b Cuboid
+	b = values{3,4,5}
+	fmt.Println("Surface Area of Box:", b.BoxSurfaceArea())
+	fmt.Println("Volume of Box:",b.Volume())
+
+	//GORoutine
+	go display_name("Go Nupur Thakur")
+	display_name("Nupur Thakur")
+	//Channels
+	Demo_Chan()
+	Demo_select()
+	Demo_Mutex()
+
+
 }
